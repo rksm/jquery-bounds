@@ -16,7 +16,7 @@
     Bounds.prototype.right = Number.NEGATIVE_INFINITY;
     Bounds.prototype.bottom = Number.NEGATIVE_INFINITY;
     Bounds.prototype.width = function() { return this.right - this.left; };
-    Bounds.prototype.height = function() { return this.bottom - this.toph; },
+    Bounds.prototype.height = function() { return this.bottom - this.top; },
     Bounds.prototype.toString = function() { return JSON.stringify(this); };
     Bounds.prototype.show = function (ms) {
         var div = $('<div/>').css({
