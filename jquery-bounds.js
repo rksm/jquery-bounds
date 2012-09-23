@@ -1,4 +1,4 @@
-/*
+/*!
  * jQuery.bounds
  * authors: Andrew Powell, Robert Krahn
  *
