@@ -11,14 +11,14 @@
 
     function Bounds() {}
 
-    Bounds.prototype.left = Number.POSITIVE_INFINITY;
-    Bounds.prototype.top = Number.POSITIVE_INFINITY;
-    Bounds.prototype.right = Number.NEGATIVE_INFINITY;
-    Bounds.prototype.bottom = Number.NEGATIVE_INFINITY;
-    Bounds.prototype.width = function() { return this.right - this.left; };
-    Bounds.prototype.height = function() { return this.bottom - this.top; },
+    Bounds.prototype.left     = Number.POSITIVE_INFINITY;
+    Bounds.prototype.top      = Number.POSITIVE_INFINITY;
+    Bounds.prototype.right    = Number.NEGATIVE_INFINITY;
+    Bounds.prototype.bottom   = Number.NEGATIVE_INFINITY;
+    Bounds.prototype.width    = function() { return this.right - this.left; };
+    Bounds.prototype.height   = function() { return this.bottom - this.top; },
     Bounds.prototype.toString = function() { return JSON.stringify(this); };
-    Bounds.prototype.show = function (ms) {
+    Bounds.prototype.show     = function (ms) {
         var div = $('<div/>').css({
             position: 'absolute',
             left: this.left + 'px',
