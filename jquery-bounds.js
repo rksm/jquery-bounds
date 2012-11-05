@@ -65,4 +65,15 @@
         return bounds;
     };
 
+    $.fn.boundsEach = function(options) {
+        var all = []
+        this.each(function (i,el) {
+            all.push($(el).bounds(options));
+        });
+        all.show = function(ms) {
+            $(all).each(function(i, bounds) { bounds.show(ms) });
+        }
+        return all;
+    }
+
 })(jQuery);
